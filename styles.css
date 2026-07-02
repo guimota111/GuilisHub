@@ -122,6 +122,33 @@ body {
   background: rgba(255,255,255,.08);
 }
 
+/* ========================== SEÇÕES ========================== */
+.section { margin-bottom: clamp(2.4rem, 5vw, 3.4rem); }
+
+.section-head {
+  margin-bottom: 1.3rem;
+  padding-left: .3rem;
+  animation: rise .7s cubic-bezier(.2,.7,.2,1) both;
+}
+.section-title {
+  font-family: "Sora", sans-serif;
+  font-weight: 700;
+  font-size: clamp(1.25rem, 3.5vw, 1.6rem);
+  letter-spacing: -0.01em;
+  display: inline-flex; align-items: center; gap: .55rem;
+}
+.section-title::before {
+  content: "";
+  width: 8px; height: 8px; border-radius: 3px;
+  background: linear-gradient(135deg, #7c9cff, #ff7ac6);
+  box-shadow: 0 0 14px rgba(124,156,255,.7);
+}
+.section-sub {
+  margin-top: .3rem;
+  color: var(--text-dim);
+  font-size: .95rem;
+}
+
 /* ============================ GRID ============================ */
 .grid {
   display: grid;

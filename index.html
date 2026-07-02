@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Guili's Hub · Meus Sites</title>
+  <meta name="description" content="Cartão de visita digital do Guili — links para todos os meus sites e projetos, com uma legenda explicando a função de cada um." />
+
+  <!-- Open Graph / social preview -->
+  <meta property="og:title" content="Guili's Hub" />
+  <meta property="og:description" content="Todos os meus sites e projetos num só lugar." />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>" />
+</head>
+<body>
+  <!-- Fundo animado -->
+  <div class="bg-aurora" aria-hidden="true"></div>
+  <div class="bg-grid" aria-hidden="true"></div>
+
+  <main class="wrapper">
+    <!-- ===== Cabeçalho / Cartão de visita ===== -->
+    <header class="hero" id="hero">
+      <div class="avatar" id="avatar">G</div>
+      <h1 class="name">Guili's&nbsp;Hub</h1>
+      <p class="tagline" id="tagline">Meu cartão de visita digital — todos os meus sites e projetos reunidos num só lugar.</p>
+
+      <div class="socials" id="socials">
+        <!-- Preenchido dinamicamente a partir de sites.js -->
+      </div>
+    </header>
+
+    <!-- ===== Grade de sites ===== -->
+    <section class="grid" id="grid" aria-label="Lista de sites"></section>
+
+    <!-- ===== Rodapé ===== -->
+    <footer class="footer">
+      <p>Feito com <span class="heart">♥</span> por Guili · <span id="year"></span></p>
+      <p class="footer-sub">Hospedado no GitHub Pages</p>
+    </footer>
+  </main>
+
+  <script src="sites.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

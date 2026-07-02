@@ -1,0 +1,4 @@
+preview.png
+*.png
+.DS_Store
+node_modules/
